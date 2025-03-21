@@ -1,0 +1,11 @@
+[package]
+name = "pi-hid"
+version = "0.1.0"
+edition = "2021"
+authors = ["Claude <noreply@anthropic.com>"]
+description = "Pi Zero HID device interface for U2F"
+
+[dependencies]
+
+[dev-dependencies]
+tempfile = "3.8"

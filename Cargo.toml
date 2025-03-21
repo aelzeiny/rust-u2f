@@ -6,6 +6,10 @@ members = [
     "linux/user-daemon",
     "linux/system-daemon",
     "linux/test-authenticator",
+    "linux/pi-hid",
+    "linux/pi-u2f-adapter",
+    "linux/pi-u2f-daemon",
+    "linux/pi-u2f-tests",
     "u2f-core",
     "u2fhid-protocol",
 ]

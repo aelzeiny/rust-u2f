@@ -1,0 +1,15 @@
+[package]
+name = "pi-u2f-tests"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+pi-hid = { path = "../pi-hid" }
+pi-u2f-adapter = { path = "../pi-u2f-adapter" }
+pi-u2f-daemon = { path = "../pi-u2f-daemon" }
+u2f-core = { path = "../../u2f-core" }
+u2fhid-protocol = { path = "../../u2fhid-protocol" }
+tokio = { version = "1", features = ["full"] }
+tempfile = "3.8"
+hex = "0.4"

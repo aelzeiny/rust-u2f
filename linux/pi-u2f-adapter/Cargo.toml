@@ -1,0 +1,10 @@
+[package]
+name = "pi-u2f-adapter"
+version = "0.1.0"
+edition = "2021"
+authors = ["Claude <noreply@anthropic.com>"]
+description = "Adapter for U2FHID protocol to work with Pi Zero HID device"
+
+[dependencies]
+pi-hid = { path = "../pi-hid" }
+u2fhid-protocol = { path = "../../u2fhid-protocol" }

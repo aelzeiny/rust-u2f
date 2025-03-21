@@ -1,0 +1,25 @@
+[package]
+name = "pi-u2f-daemon"
+version = "0.1.0"
+edition = "2021"
+authors = ["Claude <noreply@anthropic.com>"]
+description = "Raspberry Pi Zero U2F Security Key Daemon"
+
+[dependencies]
+pi-hid = { path = "../pi-hid" }
+pi-u2f-adapter = { path = "../pi-u2f-adapter" }
+u2f-core = { path = "../../u2f-core" }
+u2fhid-protocol = { path = "../../u2fhid-protocol" }
+tokio = { version = "1", features = ["full"] }
+tracing = "0.1"
+tracing-subscriber = "0.3"
+clap = { version = "4", features = ["derive"] }
+async-trait = "0.1"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+dirs = "5.0"
+thiserror = "1.0"
+hex = "0.4"
+
+[dev-dependencies]
+tempfile = "3.8"

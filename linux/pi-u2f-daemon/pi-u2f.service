@@ -1,0 +1,11 @@
+[Unit]
+Description=U2F Security Key Daemon for Raspberry Pi Zero
+After=fido-gadget.service
+
+[Service]
+ExecStart=/usr/local/bin/pi-u2f-daemon
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
